@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+        #header{
+            margin-bottom: 15px;
+            background-image: url("https://goodnews.com.my/wp-content/uploads/2019/09/Female-magazine.png");
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+        #main{
+            float: left;
+            width: 68%;
+        }
+        #sidebar{
+            float: right;
+            width: 32%;
+        }
+        .clr{
+            clear:both;
+        }
+        #footer{
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .card{
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .article{
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        #bold{
+            color: coral;
+            background-color: rgb(216, 216, 216);
+        }
+        .aside{
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1>Food Journey</h1>
+        <p>A great dish is a journey that takes you to places you have never been</p>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Welcome Section -->
+        <section id="welcome" class="card">
+            <h2>Welcome to Our Food Journey</h2>
+            <p>Malaysian Foodie Recipe focuses on food, accommodation, travel, shopping, product testing, and events. Reviews of restaurants in Kuala Lumpur and Penang. Malaysia Foodie was founded in December 2008 as Malaysia's first food blog. It has since earned a devoted audience and significant traffic from search engines among foodies seeking information on where to eat, travel ideas, reviews, and more
+                <a href="#" class="text-center">Click For More</a>
+            </p>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Kuala Lumpur Food Heaven</h2>
+            <!-- Article one -->
+            
+           <article class="article">
+                <h3>Suraya Seafood, Kg. Baru</h3>
+                <img src="https://www.packist.com/tinyfile/shuni/seafood%20kl/2019-08-03.jpg?1567067647824" alt="Suraya seafood" width="300">
+                <p>If you <span id="bold"> fancy</span> a sweet ending to the meal you’d be happy to know there’s quite a few desserts such as Pengat Labu, Pengat Pisang, red ruby, kuihs and etc to choose from. In fact, don’t look at the menu, just walk over to the center of the restaurant and pick directly from the dessert stand.</p>
+            </article>
+            <!-- Article two -->
+            <Article class="article">
+                <h3>Restoran D'Lala Seafood</h3>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/47/3d/97/img-20170514-wa0006-largejpg.jpg" alt="D'Lala Seafood" width="300">
+                <p>Aside <span id="bold">ikan bakar</span>, mixed rice is available as well. You could take some dishes from the rows and rows of dishes (frequently replenished) to go with your ikan bakar.</p>
+            </Article>  
+            
+        </section>
+
+        <section id="review">
+
+            <h2>Food Review</h2>
+
+            <h3>Which one is your favourite?</h3>
+
+            <div>
+                <label for="fav">I like...</label>
+                <input type="checkbox" name="fav" id="fav" value="Suraya Seafood">Suraya Seafood
+                <input type="checkbox" name="fav" id="fav" value="Restoran D'lala seafood">Restoran D'Lala Seafood
+                
+            </div>
+
+            <br>
+            <br>
+        </section>
+        <button type="submit">Next Page</button>
+    </main>
+
+    <!-- sidebar (right) -->
+    <aside class="aside" id="sidebar">
+        <h3>Navigation</h3>
+        <!-- Navigation menu -->
+        <nav>
+            <ul id="main-nav">
+                <li><a href="foodlist.html">Food List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h3>Contact Us</h3>
+        <ul>
+            <li><strong>Address:</strong>Kuala Lumpur</li>
+            <li><strong>Phone:</strong>(555) 555-555</li>
+            <li><strong>Email:</strong>breakout4@gmail.com</li>
+        </ul>
+        
+        <hr>
+        <h3>Kindly provide us your review</h3>
+
+        <form action="process.php">
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name here">
+            </div>
+        
+            <br>
+     <div>
+                <label for="restaurant">Restaurant:</label>
+                <input type="text" name="email" placeholder="Please enter the name of restaurant">
+            </div>
+        
+            <br>
+    <div>
+                <label for="message">Review:</label>
+                <br>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="What is your review on the restaurant"></textarea>
+            </div>
+        
+            <br>
+        
+        </form>
+    
+
+    </aside>
+
+    <div class="clr"></div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <p class="text-center">Breakout 4 &copy; 2022</p>
+    </footer>
+</body>
+</html>
